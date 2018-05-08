@@ -128,7 +128,7 @@ function shouldEnableKrux(targetingResponse) {
 }
 
 function addDOMEventListener() {
-	document.addEventListener('o.DOMContentLoaded', initAll);
+	document.addEventListener('o.DOMContentLoaded', initAll); //自定义事件，在test的时候会设置触发
 }
 function removeDOMEventListener() {
 	document.removeEventListener('o.DOMContentLoaded', initAll);

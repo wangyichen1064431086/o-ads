@@ -25,6 +25,7 @@ function is(object) {
 	} else {
 		return type;
 	}
+	//wycNote:这里直接return type就行，从JavaScript1.8.5开始toString()调用 null返回[object Null]，undefined 返回[object Undefined]，如第5版的ECMAScript
 }
 
 /**
